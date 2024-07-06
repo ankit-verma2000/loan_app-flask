@@ -10,7 +10,7 @@ def client():
 
 def test_root(client):
     resp = client.get('/')
-    assert resp.status_code == 404
+    assert resp.status_code == 200
 
 
 def test_home(client):
