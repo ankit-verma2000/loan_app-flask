@@ -6,12 +6,12 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
-    return "<p>Hello, Ankit!</p>"
+    return "<p>Hello, Ankit this side!</p>"
 
 
 @app.route("/AboutMe", methods =['GET'])
 def ping():
-    return "<p>Ankit this side </p>"
+    return "<p>Data Enthusiast </p>"
 
 
 model_pickle = open("./classifier.pkl", "rb")
